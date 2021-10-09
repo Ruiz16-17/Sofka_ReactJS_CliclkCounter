@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
+
+let model = {clicks : 0};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App clicks={model.clicks} />
   </React.StrictMode>,
   document.getElementById('root')
 );
